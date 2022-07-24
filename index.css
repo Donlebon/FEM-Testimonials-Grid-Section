@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+/* 
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+
+/* General  */
+
+.card{
+    padding: 1.5em;
+}
+
+.user{
+    display: flex;
+}
+
+.user_info{
+    margin-left: 1.5em;
+}
+
+.user_experience{
+    margin-bottom: 1em;
+}
+
+.user_background{
+    line-height: 20px;
+}
+
+.user-white{
+    color: white;
+}
+
+.graduate{
+    border-radius: 2em;
+    border: 1px solid hsl(0, 0%, 81%);
+}
+
+.user_info > .user-opacity {
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.card > .user-opacity{
+    opacity: 0.7;
+}
+
+.user{
+    margin-bottom: 1.5em;
+}
+
+
+
+
+/* Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+
+/* General Card Styling */
+
+/* Daniel */
+
+.daniel{
+    background: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 95% -10%;
+    background-color: hsl(263, 55%, 52%);
+}
