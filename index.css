@@ -6,10 +6,64 @@
     font-weight: 500;
 }
 
+body{
+    background-color:hsl(210, 46%, 95%);
+}
+
+/* Grid */
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    margin: auto;
+}
+
+.card{
+    margin-top: 2em;
+}
+
+/* Grid Items  */
+
+@media(min-width: 1000px){
+
+    .card{
+        margin-top: 0em;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(0px, auto);
+        grid-gap: 20px;
+        width: auto;
+    }
+    .daniel{
+        grid-column: 1 / 3;
+    }
+    
+    .jeanette{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    
+    .patrick{
+        grid-column: 2 / 4;
+        grid-row-start: 2;
+    }
+    
+    .kira{
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    } 
+}
+
+
 /* General Card Styling */
 
 .card{
     padding: 1.5em;
+    border-radius: 0.5em;
 }
 
 .user{
@@ -56,7 +110,7 @@
 .daniel{
     background: url("images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
-    background-position: 95% -10%;
+    background-position: 95% 0%;
     background-color: hsl(263, 55%, 52%);
 }
 
@@ -70,6 +124,10 @@
 
 .user-gray{
     color:  hsl(217, 19%, 35%);
+}
+
+.jeanette, .kira{
+    background-color: white;
 }
 
 /* Patrick */
